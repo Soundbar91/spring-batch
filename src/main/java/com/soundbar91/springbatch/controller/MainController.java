@@ -22,7 +22,7 @@ public class MainController {
         JobParameters jobParameters = new JobParametersBuilder()
             .addString("date", value)
             .toJobParameters();
-        jobLauncher.run(jobRegistry.getJob("first"), jobParameters);
+        jobLauncher.run(jobRegistry.getJob("firstJob"), jobParameters);
         return "ok";
     }
 }
